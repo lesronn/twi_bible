@@ -1919,6 +1919,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-community/slider@npm:4.5.6":
+  version: 4.5.6
+  resolution: "@react-native-community/slider@npm:4.5.6"
+  checksum: 8287f3f69b63e0b313639d7dc9a45718a85c4c4494f78485695d7e80bcf3fa9d3891d05a557affc66306df5f2a0a9853d319a35ffcc875ae71149a38a2258bb8
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:0.79.6":
   version: 0.79.6
   resolution: "@react-native/assets-registry@npm:0.79.6"
@@ -4488,6 +4495,17 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: fcbd7b1c1ab665757b3fb8f11592f35f252ada7f093eb70c17461c611347161a4bdd74a4e9717970f62ef191a400e9080426ed199c89042d020abe85007a8c79
+  languageName: node
+  linkType: hard
+
+"expo-audio@npm:~0.4.9":
+  version: 0.4.9
+  resolution: "expo-audio@npm:0.4.9"
+  peerDependencies:
+    expo: "*"
+    react: "*"
+    react-native: "*"
+  checksum: e61ad2fc47441bcbe51dfce3fe0c4cbd4b64c40878ecbc3202674f9ac98a24b5a03824f3cdd54b63d3fa17df59fe7dc69241144d389008fd52f42beedf175988
   languageName: node
   linkType: hard
 
@@ -8928,6 +8946,7 @@ __metadata:
   resolution: "twi_bible@workspace:."
   dependencies:
     "@babel/core": ^7.25.2
+    "@react-native-community/slider": 4.5.6
     "@react-navigation/bottom-tabs": ^7.3.10
     "@react-navigation/elements": ^2.3.8
     "@react-navigation/native": ^7.1.6
@@ -8935,6 +8954,7 @@ __metadata:
     eslint: ^9.25.0
     eslint-config-expo: ~9.2.0
     expo: ~53.0.22
+    expo-audio: ~0.4.9
     expo-blur: ~14.1.5
     expo-build-properties: ~0.14.8
     expo-constants: ~17.1.7

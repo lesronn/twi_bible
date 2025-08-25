@@ -5,7 +5,7 @@ import { StyleSheet } from "react-native";
 const TabsLayout = () => {
   return (
     <Tabs>
-      <Tabs.Screen name="index" />
+      <Tabs.Screen name="index" options={{ headerShown: false }} />
       <Tabs.Screen name="bible" />
       <Tabs.Screen name="more" />
     </Tabs>
