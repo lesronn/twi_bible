@@ -47,7 +47,8 @@
             "useFrameworks": "static"
           }
         }
-      ]
+      ],
+      "expo-audio"
     ],
     "experiments": {
       "typedRoutes": true
