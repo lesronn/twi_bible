@@ -4,20 +4,26 @@
     "slug": "twi_bible",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/appicons/adaptive-icon",
     "scheme": "twibible",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lescode.ios.twibible",
+      "infoPlist": {
+        "UIBackgroundModes": ["audio", "remote-notification", "fetch"]
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/appicons/adaptive-icon.png",
+        "monochromeImage": "./assets/appicons/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.lesronthizzle.twi_bible"
+      "package": "com.lescode.android.twibible",
+      "enableProguardInReleaseBuilds": true
     },
     "web": {
       "bundler": "metro",
@@ -29,10 +35,16 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/appicons/splash-icon-light.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "image": "./assets/appicons/splash-icon-dark.png",
+            "backgroundColor": "#101222",
+            "imageWidth": 200,
+            "resizeMode": "contain"
+          }
         }
       ],
       [
