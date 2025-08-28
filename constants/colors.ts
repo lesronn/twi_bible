@@ -1,13 +1,14 @@
 export const colors = {
   // Brand
-  primary: "#033923",
-  secondary: "#069030",
+  primary: "#101323E5",
+  secondary: "#FEC84B",
 
   // Text
   textPrimary: "#454141",
   textBold: "#101323",
   textSecondary: "#293056",
   textHeader: "#444140",
+  textSupport: "#433629",
 
   // Background
   backgroundPrimary: "#FFFFFF",
@@ -22,7 +23,7 @@ export const colors = {
   activeCreditBorder: "#16A34A40",
 
   formInputText: "#454141",
-  formLabelText: "#706D6D",
+  formLabelText: "#898891",
   formBorder: "rgba(0, 0, 0, 0.35)",
   formPlaceholderText: "#706D6D",
   formDisabled: "#FAFAFAFF",
@@ -51,8 +52,9 @@ export const colors = {
   infoBackground: "",
   skeletonPlaceholder: "#e4edf2",
   // Tab Bar
-  tabBarActive: "#454141",
-  tabBarInactive: "#454141",
+  tabBarActive: "#FEC84B",
+  tabBarInactive: "#FCFCFD",
+  tabBarBackground: "#101828E5",
 
   // Overlay
   overlayLight: "#ffffff95",
@@ -60,8 +62,12 @@ export const colors = {
 
   // Utility Colors
   white: "#FFFFFF",
-  grey: "#ECECEC",
+  grey: "#EAECF5",
   black: "#000000",
-  light: "#EAECF0",
-  medium: "#AEAFB3",
+  light: "#EAEDF4",
+  medium: "#686A75",
+
+  readMoreIcon: "#FEC84B",
+  shareBg: "#FFFFFF33",
+  inActiveDot: "#33395A",
 };

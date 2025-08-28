@@ -1,14 +1,14 @@
+import BookmarkCard from "@/components/bookmarkcard";
+import { moreStyles } from "@/styles/more";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
 
 const Bookmarks = () => {
   return (
-    <View>
-      <Text>Bookmarks</Text>
+    <View style={moreStyles.bookmarksContainer}>
+      <BookmarkCard bookmark={"hello"} />
     </View>
   );
 };
 
 export default Bookmarks;
-
-const styles = StyleSheet.create({});

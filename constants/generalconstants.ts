@@ -1,4 +1,5 @@
 // import * as Device from "expo-device";
+import { router } from "expo-router";
 import { Dimensions, Platform } from "react-native";
 
 export const isIOS = Platform.OS === "ios";
@@ -13,23 +14,57 @@ export const permissionContent = {
 };
 export const appStoreUrl = `https://apps.apple.com/us/app/icgc/id1279799671`;
 export const googlePlayUrl = `https://play.google.com/store/apps/details?id=com.asoriba.android.icgc`;
-// export function hasHomeButton(): boolean {
-//   if (!isIOS) return false;
-//   const homeButtonModels: string[] = [
-//     "iPhone 5",
-//     "iPhone 5s",
-//     "iPhone SE (1st generation)",
-//     "iPhone SE (2nd generation)",
-//     "iPhone SE (3rd generation)",
-//     "iPhone 6",
-//     "iPhone 6 Plus",
-//     "iPhone 6s",
-//     "iPhone 6s Plus",
-//     "iPhone 7",
-//     "iPhone 7 Plus",
-//     "iPhone 8",
-//     "iPhone 8 Plus",
-//   ];
-//   const model: string | null = Device.modelName;
-//   return model ? homeButtonModels.includes(model) : false;
-// }
+export const moreLinks = [
+  {
+    section: "Annotations",
+    links: [
+      {
+        title: "Bookmarks",
+        onPress: () => router.navigate("/more/bookmarks"),
+      },
+      {
+        title: "Notes",
+        onPress: () => router.navigate("/more/notes"),
+      },
+    ],
+  },
+
+  {
+    section: "Appearance",
+    links: [
+      {
+        title: "Theme",
+        onPress: () => console.log("Navigate to Theme"),
+      },
+      {
+        title: "Font Size",
+        onPress: () => console.log("Navigate to Font Size"),
+      },
+    ],
+  },
+
+  {
+    section: "Settings",
+    links: [
+      {
+        title: "Verse of the Day Notifications",
+        onPress: () =>
+          console.log("Navigate to Verse of the Day Notifications"),
+      },
+      {
+        title: "Send feedback",
+        onPress: () => console.log("Navigate to Privacy Policy"),
+      },
+
+      {
+        title: "Privacy Policy",
+        onPress: () => console.log("Navigate to Privacy Policy"),
+      },
+
+      {
+        title: "Rate this App",
+        onPress: () => console.log("Navigate to About Developer"),
+      },
+    ],
+  },
+];
